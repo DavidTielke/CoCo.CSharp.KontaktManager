@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="994cf7ec-9d19-4bf0-be93-f4b10930197c" name="CoCos" linkedPackageId="d935df64-bc19-4bfb-bad4-e29c0ef7f1ff" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="52921b8d-3d63-44d3-bbc1-8da1a8ad3efc">
+      <profileInstance Id="04bff5df-a3a6-430c-9cc3-d7f61c142c6c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="97528019-35db-41f1-9dfd-95e985ab0bbc">
+      <profileInstance Id="2817446d-4b03-4d61-b3b6-f29c5129ab35" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="a229bdf6-3a6e-4a70-b100-71022ffaabcc" name="Logging" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0f3ee330-1969-4b5d-a7ed-b66cfa705b9c" />
+        <ownedAttributesInternal>
+          <providedInterface Id="e1f5e8b1-6ee5-45ed-af28-bab791ff0e76" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="79a30c51-ca23-4a9a-99ea-df47d7bb96df" />
+            <type_NamedElement>
+              <interfaceMoniker Id="5377cfd1-5c4a-4d01-a61c-eee6773a0f18" LastKnownName="ILogger" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="5377cfd1-5c4a-4d01-a61c-eee6773a0f18" name="ILogger" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="266b636d-f5e3-49c4-b0e1-d6eade2e759a" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="32e0354c-3522-4e3b-a07b-f1f9f2c9e3b3" name="PersonManagement" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0f8a247c-bb61-4c22-809b-68853e96f38a" />
+        <ownedAttributesInternal>
+          <providedInterface Id="bda4393a-54c0-4c1c-9117-ae19bfe94f42" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="0e588bd7-8fc5-4f1f-8a37-3c911ecb283b" />
+            <type_NamedElement>
+              <interfaceMoniker Id="4cfa0ad8-a9cd-4d0f-a269-4cd3f38de7b6" LastKnownName="IPersonManager" />
+            </type_NamedElement>
+          </providedInterface>
+          <part Id="624c1abb-8942-4d94-838f-fe413884c3f5" name="PersonManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="a6ac397f-81ff-4bbf-8523-e297e2dca995" />
+            <type_NamedElement>
+              <componentMoniker Id="b28f9444-46d8-44e5-83ca-db5073dbe329" LastKnownName="Component1" />
+            </type_NamedElement>
+          </part>
+          <requiredInterface Id="f6b6e294-6133-49aa-8a16-7a71c571f6e7" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="bef154a2-1262-4023-8595-5ca3042406fc" />
+            <suppliersInternal>
+              <dependency Id="2a01eb76-daf4-4ff8-83cb-fa784bcd0733">
+                <providedInterfaceMoniker Id="e1f5e8b1-6ee5-45ed-af28-bab791ff0e76" LastKnownName="Port1" />
+                <elementDefinition Id="49ab3352-b68e-4fff-94b9-490c712ee59b" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="27e61097-d0fc-4528-a3c8-ee653e727559" LastKnownName="ILogger" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="6e524975-97d1-4ec7-a576-499b7e4465bb" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ed60dfe7-87c9-4e6f-a309-6d991acd6e4d" />
+            <suppliersInternal>
+              <dependency Id="41d50fa5-57c6-4c63-b557-428bcce58a58">
+                <providedInterfaceMoniker Id="b22c355c-650e-4a85-9d70-c11e4ea39afa" LastKnownName="Port1" />
+                <elementDefinition Id="19ac9f37-d5fb-44ce-91f7-6e222b01cf01" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="748e5bae-e36b-40a8-bd2b-8675e1fc7a0b" LastKnownName="IPersonRepository" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="4cfa0ad8-a9cd-4d0f-a269-4cd3f38de7b6" name="IPersonManager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="79bfcf6a-3a4c-475a-9bc2-d9de05e1fba2" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="7c91ef6f-efb3-4524-90fe-fbf6d9335482" name="Repositories" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5c9bb8b4-43ae-45bc-ad29-c22a7e0b6298" />
+        <ownedAttributesInternal>
+          <providedInterface Id="b22c355c-650e-4a85-9d70-c11e4ea39afa" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="341c2f0d-042c-408e-bbfa-4acaf97aa570" />
+            <type_NamedElement>
+              <interfaceMoniker Id="fe2bc7f3-28e8-4349-9b26-7755ff044de9" LastKnownName="IPersonRepository" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="fe2bc7f3-28e8-4349-9b26-7755ff044de9" name="IPersonRepository" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70cb4983-464e-4335-b23d-35e2483956d6" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="b28f9444-46d8-44e5-83ca-db5073dbe329" name="Component1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="69fe39b6-66d2-4b44-bdac-bb4cdf20d8fb" />
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="27e61097-d0fc-4528-a3c8-ee653e727559" name="ILogger" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="266b636d-f5e3-49c4-b0e1-d6eade2e759a" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="748e5bae-e36b-40a8-bd2b-8675e1fc7a0b" name="IPersonRepository" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70cb4983-464e-4335-b23d-35e2483956d6" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="d935df64-bc19-4bfb-bad4-e29c0ef7f1ff" name="ModelingProject">
+    <elementDefinition Id="e7aadccb-9234-475f-bf3a-637b95fd4f4d" />
+  </package>
+</componentModel>
