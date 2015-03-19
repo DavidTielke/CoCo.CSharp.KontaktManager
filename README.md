@@ -1,11 +1,11 @@
-### Beispielprojekt Composite Components - KontaktManager ###
+#Beispielprojekt Composite Components - KontaktManager
 
 Hier finden Sie eine Beispielimplementierung der Composite Components (CoCo) Architektur 
 für C# als Hilfe zur Artikelreihe "CoCo - eine .NET Architektur für die Praxis" aus der dotnetpro (Ausgabe 1/15-3/15).
 
-Teil 1 - Besser mit Plan - http://www.dotnetpro.de/articles/onlinearticle5113.aspx
-Teil 2 - Nieder mit den Abhängigkeiten - http://www.dotnetpro.de/articles/onlinearticle5146.aspx
-Teil 3 - Composite Components - http://www.dotnetpro.de/articles/onlinearticle5174.aspx
+- Teil 1 - Besser mit Plan - http://www.dotnetpro.de/articles/onlinearticle5113.aspx
+- Teil 2 - Nieder mit den Abhängigkeiten - http://www.dotnetpro.de/articles/onlinearticle5146.aspx
+- Teil 3 - Composite Components - http://www.dotnetpro.de/articles/onlinearticle5174.aspx
 
 Das hier gezeigte Beispiel zeigt eine Minimalimplementierung und wird demnächst Schrittweise erweitert.
 
