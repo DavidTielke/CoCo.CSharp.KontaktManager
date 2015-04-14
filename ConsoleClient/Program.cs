@@ -23,13 +23,15 @@ namespace DotNetPro.KontaktManager.UI.ConsoleClient
 
             var manager = kernel.Get<IPersonManager>();
 
-
+            // Alle ausgeben
             Console.WriteLine("Alle");
             manager.GetAll().ToList().ForEach(p => Console.WriteLine(p.Firstname)); 
             
+            // Nur Erwachsene
             Console.WriteLine("\nErwachsen");
             manager.GetAdults().ToList().ForEach(p => Console.WriteLine(p.Firstname)); 
             
+            // Nur Kinder
             Console.WriteLine("\nKinder");
             manager.GetChildren().ToList().ForEach(p => Console.WriteLine(p.Firstname));
 
