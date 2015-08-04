@@ -15,7 +15,7 @@ für weiter Artikel und Neuigkeiten zu diesem Thema.
 Weitere Fragen zum Thema oder zu Beratungs- und Schulungsleistungen können Sie mir gerne unter 
 mail@david-tielke.de zukommen lassen.
 
-## Update 04-08-2015: MSTest Unit-Test Projekt mit MOQ hinzugefügt.
+- Update 04-08-2015: MSTest Unit-Test Projekt mit MOQ hinzugefügt.
 
 Viel Erfolg mit den CoCos!
 
