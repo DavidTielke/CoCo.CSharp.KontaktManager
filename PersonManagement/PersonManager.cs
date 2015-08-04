@@ -32,12 +32,14 @@ namespace DotNetPro.KontaktManager.Logic.PersonManagement
 
         public IEnumerable<Person> GetAdults()
         {
+            _logger.Log("Alle Erwachsenen laden");
             return _repository.Query()
                 .Where(p => p.Age >= 18);
         }
 
         public IEnumerable<Person> GetChildren()
         {
+            _logger.Log("Alle Kinder laden");
             return _repository.Query()
                 .Where(p => p.Age < 18);
         }
